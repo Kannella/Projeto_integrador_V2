@@ -783,74 +783,74 @@ section {
   background: var(--section-bg-color);
 }
 
+.cookies_bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
 /*---------------------------------------
   COOKIES               
 -----------------------------------------*/
 
 /*---------------------------------------
-  TABELAS               
+  CARDS               
+-----------------------------------------*/
+
+.card {
+  border: 1px transparent black;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animação suave para transform e sombra */
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Sombra para efeito de elevação */
+}
+.card img {
+  width: 80px;
+  margin: 10px auto;
+}
+.card-body {
+  padding: 0.5rem;
+  color: white;
+  text-align: center;
+}
+
+.cor_fundo {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.texto_intensidade {
+  font-weight: 400;
+  color: #000;
+}
+
+.hidden-text {
+  display: none; /* Inicialmente oculto */
+  text-align: center;
+  margin-top: 20px; /* Espaçamento acima do texto */
+  text-align: justify;
+}
+  
+/*---------------------------------------
+  CARDS               
 -----------------------------------------*/
 
 
-.tabela_reconhecimento {
-  border: 1px solid black; /* Define a borda para preto com 1px de espessura */
-  padding: 10px; /* Adiciona um espaçamento interno de 10px */
-  background-color: #f8f45c;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  line-height: 20px;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  text-transform: none;
-}
-
-.classisficacoes_tabela{
-  text-align: center; /* Centraliza horizontalmente */
-  vertical-align: middle; /* Centraliza verticalmente */
-}
+/*---------------------------------------
+  ajuste imagens               
+-----------------------------------------*/
 
 .imagem_australian {
   text-align: center; /* Centraliza horizontalmente */
   vertical-align: middle; /* Centraliza verticalmente */
 }
 
-.tabela_table {
-  width: 100%;
-  height: 2em;
-}
-
-.td_tabela {
-  width: 50%;
-  text-align: justify;
-}
-table {
-  border-collapse: collapse; /* Remove qualquer espaço extra entre as bordas das células */
-}
-
-.table-custom {
-  background-color: #17a2b8; /* Cor de fundo da tabela */
-}
-.table-custom th, .table-custom td {
-  border: 1px solid #000; /* Bordas pretas para células */
-}
-.table-custom th {
-  background-color: #007bff; /* Cor de fundo para cabeçalhos da tabela */
-  color: white; /* Cor do texto para cabeçalhos da tabela */
-}
-.table-custom td {
-  background-color: #5bc0de; /* Cor de fundo para células da tabela */
-  color: black; /* Cor do texto para células da tabela */
-}
-.text-center {
-  text-align: center; /* Centraliza o texto */
-}
-
 /*---------------------------------------
-  TABELAS               
+  ajuste imagens               
 -----------------------------------------*/
 
 
@@ -1462,6 +1462,18 @@ img {
 @media (max-width: 769px) {
   .logo {
     display: none;
+  }
+}
+
+@media (max-width: 577px) {
+  .ajuste_botao_enviar_empresa {
+    margin-left: 8em;
+  }
+}
+
+@media (min-width: 769px) {
+  .ajuste_botao_enviar_empresa {
+    margin-left: 74%
   }
 }
 
