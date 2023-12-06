@@ -560,14 +560,35 @@ strong {
   object-fit: cover;
 }
 
+
+/*---------------------------------------
+  CONTRASTE              
+-----------------------------------------*/
+.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.high-contrast a {
+  color: #00f !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.high-contrast img {
+  filter: invert(1); 
+}
+/*---------------------------------------
+  CONTRASTE              
+-----------------------------------------*/
+
 /*---------------------------------------
   SLICK SLIDESHOW               
 -----------------------------------------*/
-@media (min-width: 992px) {
-  .slick-slideshow {
 
-  }
-}
 
 .slick-slideshow {
   margin-top: 86px;
@@ -768,6 +789,10 @@ strong {
 
 /*---------------------------------------
   SECTION               
+-----------------------------------------*/
+
+/*---------------------------------------
+  COOKIES               
 -----------------------------------------*/
 section {
   content-visibility: auto;
@@ -1476,7 +1501,6 @@ img {
     margin-left: 74%
   }
 }
-
 
 
 

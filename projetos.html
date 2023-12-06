@@ -35,21 +35,32 @@
         </section>
     
         <main>
-
+            
             <nav class="navbar navbar-expand-lg">
 
-                <div class="logo"><img src="images/passatempo_educativo/LOGO/LOG.jpg" alt="" style="width: 130px; margin-left: 10%;"></div>
+                <div class="logo"><img
+                    src="images/passatempo_educativo/LOGO/LOG.jpg"
+                    alt=""
+                    style="width: 130px; margin-left: 10%;"></div>
 
+                <div class="logo"></div>
                 <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                        <strong><span>Passatempo</span> Educativo</strong>
+                        <strong>
+                            <span>Passatempo</span>
+                            Educativo</strong>
                     </a>
-
-
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
@@ -66,11 +77,11 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link"href="Eletivas.html">Eletivas</a>
+                                <a class="nav-link" href="Eletivas.html">Eletivas</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="Eletivas.html">Cursos</a>
+                                <a class="nav-link" href="cursos.html">Cursos</a>
                             </li>
 
                             <li class="nav-item">
@@ -89,13 +100,13 @@
                                 <a class="nav-link" href="contato.html">Contato</a>
                             </li>
 
-                            <li class="nav-item">
-                                
-                            </li>
+                            <li class="nav-item"></li>
                         </ul>
                         <br>
                         <div class="d-lg-block">
-                            <a href="sign-in.html"><button class="btn custom-btn" type="button" style="width: 100%;">Doe Aqui e Cadastre-se</button></a>
+                            <a href="sign-in.html">
+                                <button class="btn custom-btn" type="button" style="width: 100%;">Doe Aqui</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -528,5 +539,68 @@
         <script src="js/slick.min.js"></script>
         <script src="js/custom.js"></script>
 
-    </body>
+            <script>
+                const popup = document.getElementById('popup-container');
+                const closeButton = document.getElementById('close_popup');
+                const confirmCheckbox = document.getElementById('confirm-checkbox');
+
+                // Fecha o popup
+                function closePopup() {
+
+                    popup.style.display = 'none';
+
+                }
+
+                closeButton.addEventListener('click', closePopup);
+            </script>
+
+            <div vw="vw" class="enabled">
+                <!-- inicio botão para contraste -->
+                <div class="row container-fluid justify-content-end d-flex  mb-3">
+                    <div>
+                        <button type="button" class="btn btn-warning" onclick="toggleContrast()"><img style="width: 20px; height: 20px;" src="images/passatempo_educativo/CONTRASTE/iconecontraste.png" alt=""></button>
+
+                    </div>
+                    <!-- final botão para contraste -->
+                </div>
+                <div vw-access-button="vw-access-button" class="active"></div>
+                <div vw-plugin-wrapper="vw-plugin-wrapper">
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window
+                    .VLibras
+                    .Widget("https://vlibras.gov.br/app");
+            </script>
+
+            <script
+                src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+                integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script
+                src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+                integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                crossorigin="anonymous"></script>
+
+                <script>''
+                    function toggleContrast() {
+                        var body = document.body;
+                        var isHighContrast = body.classList.contains('high-contrast');
+            
+                        if (isHighContrast) {
+                            body.classList.remove('high-contrast');
+                        } else {
+                            body.classList.add('high-contrast');
+                        }
+                    }
+                </script>
+
+        </body>
+
 </html>
